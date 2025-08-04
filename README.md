@@ -1,2 +1,2 @@
 # Ctrozier-llc
-this is m business plan
+this is my business plan
