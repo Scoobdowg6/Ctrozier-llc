@@ -1,0 +1,117 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+  color: #1C1C1C;
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-image.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+header a {
+  background-color: #FF6F00;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+header a:hover {
+  background-color: #F4B400;
+}
+
+section {
+  padding: 60px 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #FF6F00;
+}
+
+.ventures {
+  background-color: #f9f9f9;
+}
+
+.venture-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.venture-card {
+  flex: 1 1 calc(33% - 20px);
+  background: white;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.venture-card:hover {
+  transform: translateY(-8px);
+}
+
+.contact {
+  background-color: #1C1C1C;
+  color: white;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background-color: #F4B400;
+  color: #1C1C1C;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1C1C1C;
+  color: white;
+  font-size: 14px;
+}
